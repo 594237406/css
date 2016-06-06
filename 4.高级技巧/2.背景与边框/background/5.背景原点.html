@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8"/>
+    <title>Title</title>
+    <style>
+        .test{
+            width: 500px;
+            height: 500px;
+            padding: 50px;
+            border:50px solid black;
+
+
+            background: url(bg.png) no-repeat #58a;
+            background-position: right 50px bottom 50px;       /*背景相对于右下50px*/
+
+            /*background-origin: border-box;*/                 /*相对于border定位背景*/
+            /*background-origin: padding-box;*/                /*相对于padding定位背景*/
+            background-origin: content-box;                    /*相对于content定位背景*/
+        }
+    </style>
+</head>
+<body>
+    <div class="test">
+
+    </div>
+</body>
+</html>

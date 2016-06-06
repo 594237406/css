@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .menu{
+            width: 1000px;
+            margin:0 auto;
+        }
+
+        .button {
+            display: inline-block;
+            padding: .5em 1em;
+            border: 0;
+            margin: .5em 0;
+            background: #58a;
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            font: bold 120%/1 sans-serif;
+        }
+
+        .button {
+            transform: skewX(-25deg);
+            float: left;
+        }
+
+        .button:nth-child(even){
+            background: #38749c;
+        }
+
+        .button:hover{
+            background: rgba(150,150,150,0.2);
+            color: #444;
+        }
+
+        .button .text { /*内部嵌套,让文字不倾斜*/
+            transform: skewX(25deg);
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="menu">
+    <a href="#yolo" class="button">
+        <label class="text">Click me</label>
+    </a>
+    <button class="button">
+        <div>Click me</div>
+    </button>
+    <a href="#yolo" class="button">
+        <label class="text">Click me</label>
+    </a>
+    <button class="button">
+        <div>Click me</div>
+    </button>
+</div>
+</body>
+</html>

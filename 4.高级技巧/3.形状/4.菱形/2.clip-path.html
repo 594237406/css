@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        img {
+            max-width: 250px;
+            margin: 20px;
+            /*根据路径进行裁边,可以接n个点,每个点x y坐标*/
+            -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+            clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+            transition: 1s;
+        }
+
+        /*支持动画*/
+        img:hover {
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    </style>
+</head>
+<body>
+    <img src="img.png" />
+</body>
+</html>

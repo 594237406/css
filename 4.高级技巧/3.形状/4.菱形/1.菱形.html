@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .diamond {
+            width: 250px;
+            height: 250px;
+            transform: rotate(45deg);
+            overflow: hidden;
+            margin: 100px;
+        }
+
+        .diamond img {
+            max-width: 100%;
+            transform: rotate(-45deg) scale(1.42);    /*如果直接变换,会得到8边形,因为一个正方形的对角线是边长的1.42(根号2)倍,所以放大1.42*/
+        }
+    </style>
+</head>
+<body>
+<div class="diamond">
+    <img src="img.png" />
+</div>
+</body>
+</html>

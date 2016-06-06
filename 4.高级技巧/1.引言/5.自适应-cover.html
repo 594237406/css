@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Title</title>
+    <style>
+        html,body{
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .header{
+            height:20vmin;           /*width或height较小者*/
+            background-image: url('header.png');
+            text-align: center;
+            line-height: 20vmin;
+            background-size: cover;  /*使宽高(较小者,contain为较大者)自适应到背景图片,而100% 完全拉伸,宽高比失调*/
+        }
+
+        .main{
+            flex: 1;
+            width:100vmax;           /*width或height较大者*/
+            background: #eee;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        header
+    </div>
+    <div class="main">
+        main
+    </div>
+</div>
+
+
+
+</body>
+</html>

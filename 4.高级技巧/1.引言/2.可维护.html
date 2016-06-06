@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .button{
+            padding: 0 .8em;
+            border-width: 1px;
+            border-left-width: 0;       /*只需要改动一个地方*/
+            line-height: 2;
+            font-size: 1rem;
+            color: rgb(255,255,255);
+        }
+
+        .button hr{
+            color: currentColor;        /*当前文字颜色*/
+            width: 100%;
+        }
+        .button.ok{
+            background-color: #c00;
+        }
+
+        .button.cancel{
+            background-color: #6b0;
+        }
+    </style>
+</head>
+<body>
+    <button class="button ok">OK<hr/></button>
+    <button class="button cancel">Cancel</button>
+</body>
+</html>
