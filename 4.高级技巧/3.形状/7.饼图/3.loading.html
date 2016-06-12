@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .loading{
+            width: 4em;
+            height: 4em;
+            border: .01em solid #eee;
+            border-radius: 50%;
+            color: rgb(0,114,198);
+            position: relative;
+            line-height: 3.2em;
+            text-align: center;
+        }
+
+        .loading:before{
+            display: block;
+            border-radius: 50%;
+            width: 3em;
+            height: 3em;
+            position: absolute;
+            top: .5em;
+            left: .5em;
+            content: "load";
+            color: #fff;
+            background-color: #555;
+            z-index: 2;
+        }
+
+        .loading:after{
+            position: absolute;
+            border-radius: 0 100% 0 0;
+            z-index: 1;
+            width: 2em;
+            height: 2em;
+            content: "";
+            background: currentColor;
+            left:2em;
+            transform-origin:left bottom;
+            animation:half 3s linear infinite;
+        }
+
+        @keyframes half {
+            to{
+                transform: rotate(1turn);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="loading"></div>
+</body>
+</html>

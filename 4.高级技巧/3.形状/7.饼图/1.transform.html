@@ -5,13 +5,15 @@
     <title>Title</title>
     <style>
         .pie {
-            width: 100px; height: 100px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             background: yellowgreen;
             background-image: linear-gradient(to right, transparent 50%, currentColor 0);
             color: #655;
         }
 
+        /*一直旋转的半圆,开始颜色绿色,中间颜色棕色*/
         .pie::before {
             content: '';
             display: block;
@@ -20,18 +22,23 @@
             border-radius: 0 100% 100% 0 / 50%;
             background-color: inherit;
             transform-origin: left;
-            animation: spin 3s linear infinite,bg 6s step-end infinite;
+            animation: spin 2s linear infinite,bg 4s step-end infinite;
         }
 
         @keyframes spin {
-            to { transform: rotate(.5turn); }
+            to {
+                transform: rotate(.5turn);
+            }
         }
+
         @keyframes bg {
-            50% { background: currentColor; }
+            50% {
+                background: currentColor;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="pie"></div>
+<div class="pie"></div>
 </body>
 </html>
