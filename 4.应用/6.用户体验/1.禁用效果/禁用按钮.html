@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button {
+            position: relative;
+            padding: .3em .5em;
+            background: #58a;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 0, 0, .3);
+            box-shadow: 0 .1em .2em -.05em rgba(0, 0, 0, .5);
+            color: white;
+            font: bold 150%/1 sans-serif;
+            cursor: pointer;
+            margin: 100px;
+            transition: .5s;
+        }
+
+        button:before {
+            content: '';
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            bottom: -20px;
+            left: -20px;
+        }
+
+        button:hover{
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+<button disabled="disabled">+</button>
+</body>
+</html>
