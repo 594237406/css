@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" xml:lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>nth-child</title>
+		<style type="text/css">
+			p{height:30px;border:1px solid black;}
+			/*匹配从倒数第四个起到第一个元素,并且是第一个元素,命中第一个元素*/
+			p:first-child:nth-last-child(n+4){background: green;}
+			
+		</style>
+	</head>
+	
+	<body>
+		<p>p1</p>
+		<p>p1</p>
+		<p>p1</p>
+		<p>p1</p>
+		<p>p1</p>
+		<p>p1</p>
+		<p>p1</p>
+		<p>p1</p>
+		<p>p1</p>
+		<p>p1</p>
+	</body>
+</html>
